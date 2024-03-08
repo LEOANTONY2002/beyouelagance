@@ -1,0 +1,126 @@
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100vw;
+  height: 420px;
+  margin-top: 200px;
+}
+.f_left {
+  display: grid;
+  place-content: center;
+  width: 30vw;
+}
+.f_left > img {
+  width: 280px;
+  height: 90px;
+}
+
+.f_main {
+  width: 80vw;
+  /* background-color: #fd00a7; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border-radius: 200px 0 0 200px; */
+  position: relative;
+  height: 420px;
+}
+.f_main > img {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 420px;
+}
+
+.f_social {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.f_links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.f_links div:last-of-type {
+  gap: 5px;
+}
+
+.f_link {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 20vw;
+}
+.f_link h2 {
+  color: white;
+}
+.f_link span {
+  margin-top: 10px;
+}
+.f_link a {
+  color: white;
+  text-decoration: none;
+}
+.f_link h6 {
+  color: rgba(157, 157, 157, 0.627);
+  font-weight: 400;
+  font-size: 16px;
+}
+.f_link p {
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .Footer {
+    flex-direction: column;
+    width: 100vw;
+    height: 100%;
+    align-items: center;
+    position: relative;
+  }
+  .Footer > img {
+    position: absolute;
+    top: -70px;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+  }
+  .f_left img {
+    width: 200px;
+    height: auto;
+  }
+  .f_main {
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+  }
+  .f_main > img {
+    width: 100vw;
+    height: 100%;
+  }
+  .f_social {
+    flex-direction: row;
+    width: 90%;
+  }
+  .f_links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100vw;
+    margin: 100px 0;
+    gap: 100px;
+  }
+  .f_link {
+    flex-direction: column;
+    max-width: 80vw;
+  }
+}

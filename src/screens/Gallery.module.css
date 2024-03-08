@@ -1,0 +1,24 @@
+.Gallery {
+}
+
+.g_banner {
+  width: 100vw;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gb_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70vw;
+}
+.gb_img {
+  position: absolute;
+}
+.gb_grad {
+  width: 30vw;
+  height: calc(100vh - 100px);
+  background: linear-gradient(120deg, #ff02a9, #ff85d5);
+}

@@ -1,0 +1,116 @@
+.Nav {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  margin: auto;
+}
+.Nav > img {
+  width: 40px;
+  height: auto;
+}
+.Nav > img:last-of-type {
+  width: 25px;
+}
+.Nav > div {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: small;
+}
+
+.Nav a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+.mNav {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff8fd;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 50px;
+}
+.mNav img {
+  margin-right: 20px;
+}
+.mNav div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.n_tab {
+  width: 100vw;
+  text-align: center;
+  box-shadow: 0 10px 30px #ffbfe943;
+  /* height: 100%; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.n_tab a {
+  text-decoration: none;
+  color: #57003972;
+  font-weight: bolder;
+  font-size: 24px;
+}
+#n_tab0 {
+  border-bottom-left-radius: 500px;
+  height: 40% !important;
+  top: -15% !important;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-bottom: 25%;
+  padding-right: 10%;
+  background-color: #ffdef6b9;
+  z-index: 7;
+}
+#n_tab1 {
+  border-bottom-left-radius: 1000px;
+  height: 40% !important;
+  align-items: center;
+  justify-content: end;
+  padding-bottom: 17%;
+  z-index: 6;
+}
+#n_tab2 {
+  border-bottom-left-radius: 1000px;
+  height: 60% !important;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 27%;
+  z-index: 5;
+}
+#n_tab3 {
+  border-bottom-left-radius: 1000px;
+  height: 80% !important;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 30%;
+  z-index: 4;
+}
+#n_tab4 {
+  border-bottom-left-radius: 1000px;
+  height: 100% !important;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 30%;
+  z-index: 3;
+}
