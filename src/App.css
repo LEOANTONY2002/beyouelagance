@@ -2,9 +2,25 @@
   margin: 0;
 }
 
+@font-face {
+  font-family: "Ruthie";
+  src: url("./assets/fonts/Ruthie-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+}
+
 body {
   background-color: #fff8fd;
   width: 100vw;
+  font-family: "Poppins";
 }
 
 body::-webkit-scrollbar {

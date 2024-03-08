@@ -41,14 +41,15 @@
   gap: 15px;
   font-size: 32px;
   color: rgba(99, 99, 99, 0.629);
+  font-family: "Ruthie";
 }
 .hb_left h3 {
   font-size: 24px;
-  font-weight: bold;
+  font-family: "Poppins-Bold";
 }
 .hb_left h1 {
+  font-family: "Poppins-Bold";
   font-size: 48px;
-  font-weight: bolder;
   background: linear-gradient(120deg, #fd00a7, #2c025f);
   background-clip: text;
   color: transparent;
