@@ -1,5 +1,4 @@
 import * as React from "react";
-import Nav from "../components/Nav.module";
 import styles from "./Home.module.css";
 import EllipseHome from "../assets/EllipseHome.png";
 import EllipseHomeM from "../assets/EllipseHomeM.png";
@@ -13,7 +12,6 @@ import Nail from "../assets/Nail.png";
 import Spa from "../assets/Spa.png";
 import Experience from "../assets/Experience.png";
 import { services } from "../content";
-import Footer from "../components/Footer.module";
 import { useWindowWidth } from "@react-hook/window-size";
 
 const Home = () => {
@@ -133,7 +131,6 @@ const Home = () => {
         </div>
         <img src={Experience} alt="" />
       </section>
-      <Footer />
     </div>
   );
 };

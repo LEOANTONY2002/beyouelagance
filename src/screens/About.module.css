@@ -1,0 +1,115 @@
+.a_banner {
+  width: 90vw;
+  height: calc(100vh - 100px);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+  position: relative;
+}
+.ab_left,
+.ab_right {
+  width: 350px;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 150px 800px 500px 500px;
+  position: relative;
+}
+.ab_left img,
+.ab_right img {
+  width: 350px;
+  height: 100%;
+  object-fit: cover;
+}
+.ab_left div,
+.ab_right div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #ff02abb3;
+  z-index: 1;
+}
+.ab_right {
+  width: 350px;
+  height: calc(100vh - 100px);
+  border-radius: 800px 150px 500px 500px !important;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+.ab_right div {
+  background-color: #fff8fdd4;
+}
+
+.ab_title {
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+.ab_title > div {
+  display: flex;
+  flex-direction: column;
+}
+.ab_title span {
+  font-family: "Poppins-Bold";
+  font-size: 46px;
+  background: linear-gradient(120deg, #fd00a7, #2c025f);
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+}
+.ab_title h1 {
+  font-family: "Poppins-Bold";
+  font-size: 96px;
+  background: linear-gradient(120deg, #fd00a7, #2c025f);
+  background-clip: text;
+  color: transparent;
+  margin: 0;
+  line-height: 78px;
+}
+.ab_title p {
+  font-family: "Edwardian";
+  color: #ff00b73d;
+  font-size: 32px;
+  line-height: 0;
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .a_banner {
+    flex-direction: column;
+  }
+  .a_banner > img {
+    width: 90vw;
+    height: calc(100vh - 360px);
+  }
+  .ab_left,
+  .ab_right {
+    width: 90vw;
+  }
+  .ab_left img,
+  .ab_right img {
+    width: 90vw;
+  }
+  .ab_title {
+    position: relative;
+    margin: 50px auto;
+  }
+  .ab_title span {
+    font-size: 32px;
+    text-align: center;
+  }
+  .ab_title h1 {
+    font-size: 64px;
+  }
+  .ab_title p {
+    font-size: 22px;
+  }
+}
