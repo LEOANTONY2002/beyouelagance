@@ -17,6 +17,11 @@
   src: url("./assets/fonts/Poppins-ExtraBold.ttf");
 }
 
+@font-face {
+  font-family: "Edwardian";
+  src: url("./assets//fonts/ITCEDSCR.TTF");
+}
+
 body {
   background-color: #fff8fd;
   width: 100vw;

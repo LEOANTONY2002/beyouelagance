@@ -7,18 +7,96 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 100px;
 }
 .gb_title {
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   width: 70vw;
 }
+.gb_title div {
+  width: 50vw;
+}
+.gb_title span {
+  font-family: "Poppins-Bold";
+  font-size: 48px;
+  background: linear-gradient(120deg, #fd00a7, #2c025f);
+  background-clip: text;
+  color: transparent;
+}
+.gb_title p {
+  font-family: "Poppins-Bold";
+  font-size: 96px;
+  background: linear-gradient(120deg, #fd00a7, #2c025f);
+  background-clip: text;
+  color: transparent;
+}
 .gb_img {
   position: absolute;
+  right: 15vw;
+  display: flex;
+  align-items: center;
+}
+.gb_img img {
+  width: 30vw;
+  box-shadow: 0 4px 60px #6d00498f;
+  border-radius: 40px;
+}
+.gb_img p {
+  width: 1px;
+  height: 300px;
+  background-color: #fff8fd;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+.gb_img span {
+  rotate: -90deg;
+  position: absolute;
+  right: -140px;
+  font-family: "Edwardian";
+  color: #fff8fd;
+  font-size: xx-large;
 }
 .gb_grad {
   width: 30vw;
   height: calc(100vh - 100px);
   background: linear-gradient(120deg, #ff02a9, #ff85d5);
+}
+
+.mg_banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 100px);
+  margin-top: 100px;
+}
+.mgb_grad {
+  background: linear-gradient(120deg, #ff02a9, #ff85d5);
+  width: 100vw;
+  height: 40vh;
+}
+.mgb_img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+.mgb_img img {
+  width: 60vw;
+}
+.mgb_img p {
+  width: 90%;
+  height: 1px;
+}
+.mgb_img span {
+  font-family: "Edwardian";
+  color: #fff8fd;
+  font-size: xx-large;
+}
+.mgb_title {
+  text-align: center;
+  flex: 1;
 }
