@@ -54,7 +54,7 @@ body::-webkit-scrollbar:horizontal {
 
 section {
   max-width: 90vw;
-  margin: auto;
+  margin: 30vh auto;
 }
 
 button {

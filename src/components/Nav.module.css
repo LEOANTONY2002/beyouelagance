@@ -51,6 +51,7 @@
   align-items: center;
   justify-content: space-evenly;
   height: 100%;
+  font-family: "Poppins-bold";
 }
 .n_tab {
   width: 100vw;

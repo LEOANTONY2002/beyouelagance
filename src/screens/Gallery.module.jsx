@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Gallery.module.css";
 import GalleryBanner from "../assets/Gallery.png";
 import { useWindowWidth } from "@react-hook/window-size";
+import { gallery } from "../content";
 
 const Gallery = () => {
   const width = useWindowWidth();
+  const [galleryIndex, setGalleryIndex] = useState(0);
 
   return (
     <>
@@ -40,6 +42,23 @@ const Gallery = () => {
             </div>
           </div>
         )}
+        <section className={styles.g_album}>
+          <div className={styles.g_nav}>
+            {gallery.map((gal, index) => (
+              <span
+                onClick={() => setGalleryIndex(index)}
+                className={index === galleryIndex ? styles.gna_title : ""}
+              >
+                {gal.name}
+              </span>
+            ))}
+          </div>
+          <div className={styles.g_photos}>
+            {gallery[galleryIndex].photos.map((photo) => (
+              <img src={photo} alt="" />
+            ))}
+          </div>
+        </section>
       </div>
     </>
   );

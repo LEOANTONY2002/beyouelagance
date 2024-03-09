@@ -84,6 +84,7 @@
 .h_types h1 {
   font-weight: bolder;
   font-size: 40px;
+  font-family: "Poppins-bold";
 }
 .h_types h1 span {
   color: #fd00a7;
@@ -126,9 +127,11 @@
 .hs_title span {
   color: #fd00a7;
   font-size: 20px;
+  font-family: "Ruthie";
 }
 .hs_title h1 {
   font-size: 32px;
+  font-family: "Poppins-bold";
 }
 .hs_main {
   width: 90vw;
@@ -234,6 +237,7 @@
 .he_content h1 {
   font-size: 48px;
   text-align: center;
+  font-family: "Poppins-bold";
 }
 .he_content p {
   text-align: center;

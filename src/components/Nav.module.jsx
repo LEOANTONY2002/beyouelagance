@@ -46,26 +46,40 @@ const Nav = () => {
               </div>
               <div>
                 <div id={styles.n_tab1} className={styles.n_tab}>
-                  <Link to={"/"} style={path === "/" && style}>
+                  <Link
+                    to={"/"}
+                    onClick={() => setOpen(false)}
+                    style={path === "/" ? style : {}}
+                  >
                     Home
                   </Link>
                 </div>
                 <div id={styles.n_tab2} className={styles.n_tab}>
                   <Link
                     to={"/gallery"}
+                    onClick={() => setOpen(false)}
                     style={path === "/gallery" ? style : {}}
                   >
                     Gallery
                   </Link>
                 </div>
                 <div id={styles.n_tab3} className={styles.n_tab}>
-                  <Link to={"/about"} style={path === "/about" ? style : {}}>
+                  <Link
+                    to={"/about"}
+                    onClick={() => setOpen(false)}
+                    style={path === "/about" ? style : {}}
+                  >
                     About
                   </Link>
                 </div>
-                <div id={styles.n_tab4} className={styles.n_tab}>
+                <div
+                  id={styles.n_tab4}
+                  onClick={() => setOpen(false)}
+                  className={styles.n_tab}
+                >
                   <Link
                     to={"/contact"}
+                    onClick={() => setOpen(false)}
                     style={path === "/contact" ? style : {}}
                   >
                     Contact
