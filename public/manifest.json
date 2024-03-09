@@ -8,6 +8,12 @@
       "type": "img/png"
     },
     {
+      "src": "logo144.png",
+      "type": "img/png",
+      "sizes": "144x144",
+      "purpose": "any"
+    },
+    {
       "src": "logo192.png",
       "type": "img/png",
       "sizes": "192x192"
@@ -15,11 +21,12 @@
     {
       "src": "logo512.png",
       "type": "img/png",
-      "sizes": "512x512"
+      "sizes": "512x512",
+      "purpose": "maskable"
     }
   ],
   "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "display": "fullscreen",
+  "theme_color": "#fff8fd",
+  "background_color": "#fff8fd"
 }

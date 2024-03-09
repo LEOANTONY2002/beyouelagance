@@ -260,6 +260,7 @@
   .hb_img {
     width: auto;
     height: 45%;
+    margin-top: 20px;
   }
   .hb_left > div {
     width: 100%;
@@ -267,20 +268,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
   }
   .hb_left span {
-    /* gap: 10px; */
+    gap: 10px;
     font-size: 26px;
     text-align: center;
   }
   .hb_left h3 {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
   }
   .hb_left h1 {
-    font-size: 42px;
+    font-size: 37px;
     text-align: center;
     margin: auto 20px;
+  }
+  .hb_left button {
+    width: 120px;
+    height: 50px;
+    font-size: 12px;
   }
   .hb_right {
     height: 20vh;
@@ -350,6 +357,10 @@
   }
   .hs_nav section {
     flex-direction: row;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
   }
   .h_exp {
     flex-wrap: wrap;
@@ -358,5 +369,8 @@
   .h_exp img {
     max-width: 90%;
     height: auto;
+  }
+  .he_content p {
+    width: 80vw;
   }
 }

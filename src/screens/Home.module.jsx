@@ -77,7 +77,6 @@ const Home = () => {
       </section>
       <section className={styles.h_service}>
         <div className={styles.hs_title}>
-          {/* <span className={ruthie.className}>Beauty in Full Bloom</span> */}
           <span>Beauty in Full Bloom</span>
           <h1>OUR SERVICES</h1>
         </div>
@@ -90,9 +89,13 @@ const Home = () => {
                   onClick={() => setServiceIndex(index)}
                   src={service.photo}
                   style={
-                    index !== serviceIndex
+                    index !== serviceIndex && width > 700
                       ? { width: "60px", height: "60px" }
-                      : { width: "90px", height: "90px" }
+                      : index === serviceIndex && width > 700
+                      ? { width: "90px", height: "90px" }
+                      : index === serviceIndex && width <= 700
+                      ? { width: "60px", height: "60px" }
+                      : { width: "40px", height: "40px" }
                   }
                   alt=""
                 />
