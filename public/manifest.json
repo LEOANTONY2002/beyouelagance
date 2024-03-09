@@ -1,11 +1,11 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "BEYOUELAGANCE",
+  "name": "BEYOUELAGANCE",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "logo64.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "img/x-icon"
+      "type": "img/png"
     },
     {
       "src": "logo192.png",
