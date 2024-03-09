@@ -15,6 +15,7 @@
 }
 .Nav > img:last-of-type {
   width: 25px;
+  cursor: pointer;
 }
 .Nav > div {
   display: flex;
@@ -42,6 +43,7 @@
 }
 .mNav img {
   margin-right: 20px;
+  cursor: pointer;
 }
 .mNav div {
   display: flex;
@@ -70,21 +72,22 @@
   font-size: 24px;
 }
 #n_tab0 {
-  border-bottom-left-radius: 500px;
+  border-bottom-left-radius: 700px;
   height: 40% !important;
-  top: -15% !important;
+  top: -30% !important;
+  left: -15%;
   width: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  padding-bottom: 25%;
-  padding-right: 10%;
+  padding-bottom: 30%;
+  padding-left: 15%;
   background-color: #ffdef6b9;
   z-index: 7;
 }
 #n_tab1 {
   border-bottom-left-radius: 1000px;
-  height: 40% !important;
+  height: 35% !important;
   align-items: center;
   justify-content: end;
   padding-bottom: 17%;
@@ -92,7 +95,7 @@
 }
 #n_tab2 {
   border-bottom-left-radius: 1000px;
-  height: 60% !important;
+  height: 52% !important;
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 27%;
@@ -100,7 +103,7 @@
 }
 #n_tab3 {
   border-bottom-left-radius: 1000px;
-  height: 80% !important;
+  height: 70% !important;
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 30%;
@@ -108,7 +111,7 @@
 }
 #n_tab4 {
   border-bottom-left-radius: 1000px;
-  height: 100% !important;
+  height: 92% !important;
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 30%;
