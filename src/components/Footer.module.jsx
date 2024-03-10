@@ -4,8 +4,6 @@ import Title from "../assets/title.png";
 import Fb from "../assets/Fb.png";
 import Insta from "../assets/Insta.png";
 import Whatsapp from "../assets/Whatsapp.png";
-import FooterEllipse from "../assets/FooterEllipse.png";
-import FooterEllipseM from "../assets/FooterEllipseM.png";
 import EllipseFooter from "../assets/EllipseFooter.png";
 import EllipseFooterM from "../assets/EllipseFooterM.png";
 import FooterEllipse2M from "../assets/FooterEllipse2M.png";
