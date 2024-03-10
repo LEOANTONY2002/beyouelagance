@@ -5,6 +5,8 @@ import Menu from "../assets/Menu.png";
 import Close from "../assets/Close.png";
 import { useWindowWidth } from "@react-hook/window-size";
 import { Link, useLocation } from "react-router-dom";
+import LangSwitch from "./MUI/langSwitch";
+import { useTranslation } from "react-i18next";
 
 const Nav = () => {
   const router = useLocation();
@@ -13,14 +15,17 @@ const Nav = () => {
   const width = useWindowWidth();
   const [open, setOpen] = useState(false);
 
+  const {t}=useTranslation();
+
   return (
     <>
       {width > 700 ? (
         <div className={styles.Nav}>
           <img src={Logo} alt="" />
           <div>
+            <LangSwitch/>
             <Link to={"/"} style={path === "/" ? style : {}}>
-              Home
+              {t('Home')}
             </Link>
             <Link to={"/gallery"} style={path === "/gallery" ? style : {}}>
               Gallery

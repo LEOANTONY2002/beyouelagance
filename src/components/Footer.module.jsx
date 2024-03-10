@@ -9,9 +9,11 @@ import FooterEllipseM from "../assets/FooterEllipseM.png";
 import FooterEllipse2M from "../assets/FooterEllipse2M.png";
 import { useWindowWidth } from "@react-hook/window-size";
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const width = useWindowWidth();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className={styles.Footer}>
@@ -46,7 +48,7 @@ const Footer = () => {
         </div>
         <div className={styles.f_links}>
           <div className={styles.f_link}>
-            <h2>COMPANY</h2>
+            <h2>{t('COMPANY')}</h2>
             <Link href={"/"}>Home</Link>
             <Link href={"/"}>Gallery</Link>
             <Link href={"/"}>About Us</Link>
