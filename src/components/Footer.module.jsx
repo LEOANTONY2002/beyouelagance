@@ -12,6 +12,7 @@ import FooterEllipse2M from "../assets/FooterEllipse2M.png";
 import Location from "../assets/Location.png";
 import { useWindowWidth } from "@react-hook/window-size";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const width = useWindowWidth();
