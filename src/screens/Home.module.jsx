@@ -10,6 +10,11 @@ import Face from "../assets/Face.png";
 import Hair from "../assets/Hair.png";
 import Nail from "../assets/Nail.png";
 import Spa from "../assets/Spa.png";
+import BrideM from "../assets/BrideM.png";
+import FaceM from "../assets/FaceM.png";
+import HairM from "../assets/HairM.png";
+import NailM from "../assets/NailM.png";
+import SpaM from "../assets/SpaM.png";
 import Experience from "../assets/Experience.png";
 import { services } from "../content";
 import { useWindowWidth } from "@react-hook/window-size";
@@ -17,7 +22,6 @@ import { useWindowWidth } from "@react-hook/window-size";
 const Home = () => {
   const [serviceIndex, setServiceIndex] = React.useState(0);
   const width = useWindowWidth();
-  console.log(styles);
 
   return (
     <div className={styles.Home}>
@@ -31,7 +35,6 @@ const Home = () => {
           <img className={styles.hb_img} src={BannerImg} alt="" />
           <div>
             <span>
-              {/* <span className={ruthie.className}>we make you feel</span> */}
               <span>we make you feel</span>
               <h3>ELAGANT</h3>
             </span>
@@ -50,25 +53,45 @@ const Home = () => {
             Your <span>All-in-One</span> Sanctuary for Beauty and Serenity.
           </h1>
           <div className={styles.ht_cards}>
-            <div>
-              <img src={Bride} alt="" />
+            <div
+              style={{ backgroundImage: `url(${BrideM})` }}
+              className={styles.ht_card}
+            >
+              <div></div>
               <span>Bridal</span>
+              <img src={Bride} alt="" />
             </div>
-            <div>
-              <img src={Face} alt="" />
+            <div
+              style={{ backgroundImage: `url(${FaceM})` }}
+              className={styles.ht_card}
+            >
+              <div></div>
               <span>Face</span>
+              <img src={Face} alt="" />
             </div>
-            <div>
-              <img src={Hair} alt="" />
+            <div
+              style={{ backgroundImage: `url(${HairM})` }}
+              className={styles.ht_card}
+            >
+              <div></div>
               <span>Hair</span>
+              <img src={Hair} alt="" />
             </div>
-            <div>
-              <img src={Nail} alt="" />
+            <div
+              style={{ backgroundImage: `url(${NailM})` }}
+              className={styles.ht_card}
+            >
+              <div></div>
               <span>Nail</span>
+              <img src={Nail} alt="" />
             </div>
-            <div>
-              <img src={Spa} alt="" />
+            <div
+              style={{ backgroundImage: `url(${SpaM})` }}
+              className={styles.ht_card}
+            >
+              <div></div>
               <span>Spa</span>
+              <img src={Spa} alt="" />
             </div>
           </div>
         </div>
