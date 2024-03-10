@@ -5,9 +5,17 @@ import Nav from './components/Nav.module';
 import Gallery from './screens/Gallery.module';
 import Footer from './components/Footer.module';
 import About from './screens/About.module';
+import * as React from 'react';
+import { theme } from './Theme';
+import { CssBaseline, ThemeProvider } from '@mui/material';
+
+
 
 function App() {
   return (
+    <React.Fragment>
+    <CssBaseline />
+    <ThemeProvider theme={theme}>
     <div className="App">
       <Nav />
       <Routes>
@@ -18,6 +26,8 @@ function App() {
       </Routes>
       <Footer />
     </div>
+    </ThemeProvider>
+    </React.Fragment>
   );
 }
 

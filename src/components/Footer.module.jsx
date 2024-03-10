@@ -15,6 +15,7 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   const width = useWindowWidth();
+  const { t, i18n } = useTranslation();
 
   return (
     <div className={styles.Footer}>
