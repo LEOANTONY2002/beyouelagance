@@ -96,3 +96,5 @@ export const gallery = [
         ] 
     }
 ]
+
+export const videoUrl = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"

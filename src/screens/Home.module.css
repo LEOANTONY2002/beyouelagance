@@ -29,6 +29,7 @@
   width: 400px;
   height: 550px;
   z-index: 1;
+  margin-left: 40px;
 }
 .hb_left > div {
   z-index: 1;
