@@ -35,19 +35,22 @@ const Nav = () => {
             <Link to={"/contact"} style={path === "/contact" ? style : {}}>
               Contact
             </Link>
-            {process.env.REACT_APP_DEV === 'true' && <LangSwitch />}
+            {process.env.REACT_APP_DEV === "true" && <LangSwitch />}
           </div>
         </div>
       ) : (
         <>
-          <div className={styles.Nav}>
+          <div
+            style={width <= 700 ? { width: "90vw" } : {}}
+            className={styles.Nav}
+          >
             <img src={Logo} alt="" />
             <img onClick={() => setOpen(true)} alt={"Menu"} src={Menu} />
           </div>
           {open && (
             <div className={styles.mNav}>
               <div id={styles.n_tab0} className={styles.n_tab}>
-                <img alt={'close'} onClick={() => setOpen(false)} src={Close} />
+                <img alt={"close"} onClick={() => setOpen(false)} src={Close} />
               </div>
               <div>
                 <div id={styles.n_tab1} className={styles.n_tab}>

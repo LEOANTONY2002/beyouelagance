@@ -1,5 +1,5 @@
 .Nav {
-  width: 90vw;
+  width: 95vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,10 +11,11 @@
 }
 .Nav > img {
   width: 40px;
-  height: auto;
+  height: 40px;
 }
 .Nav > img:last-of-type {
-  width: 25px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
 }
 .Nav > div {
@@ -30,7 +31,7 @@
 }
 
 .mNav {
-  z-index: 2;
+  z-index: 5;
   position: fixed;
   top: 0;
   width: 100vw;
