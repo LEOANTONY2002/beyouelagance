@@ -98,7 +98,7 @@
 .c_form input,
 .c_form textarea {
   height: 40px;
-  box-shadow: 0 4px 20px #fe3ac724;
+  box-shadow: 0 4px 20px #f4a0d738;
   border-radius: 10px;
   text-indent: 10px;
   background-color: #fff;
@@ -109,6 +109,39 @@
 .c_form button {
   border-radius: 50px;
   height: 60px;
+}
+.c_loc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.c_loc > h2 {
+  font-family: "Edwardian";
+  font-size: 46px;
+  color: #940161;
+}
+.cl_maps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.cl_map {
+  padding: 20px;
+  background-color: #ff64cb38;
+  box-shadow: 0 4px 40px #ff24b227;
+  border-radius: 40px;
+  display: grid;
+  place-content: center;
+}
+.cl_map iframe {
+  max-width: 400px;
+  height: 400px;
+  border-radius: 30px;
+  border: none;
 }
 
 @media (max-width: 900px) {

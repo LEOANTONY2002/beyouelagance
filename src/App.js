@@ -9,6 +9,7 @@ import * as React from 'react';
 import { theme } from './Theme';
 import { CssBaseline, ThemeProvider } from '@mui/material';
 import Contact from './screens/Contact.module';
+import Service from './screens/Service.module';
 
 
 
@@ -20,9 +21,10 @@ function App() {
     <div className="App">
       <Nav />
       <Routes>
+      <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />
         <Route path='/gallery' element={<Gallery />} />
-        <Route path='/contact' element={<Contact />} />
+        <Route path='/service' element={<Service />} />
         <Route path='/' element={<Home />} />
 
         <Route path='*' element={<div>Not Found</div>} />

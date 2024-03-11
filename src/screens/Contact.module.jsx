@@ -4,12 +4,9 @@ import {
   Card,
   Container,
   Dialog,
-  DialogActions,
   DialogContent,
   DialogContentText,
   DialogTitle,
-  Divider,
-  Grid,
   InputAdornment,
   Stack,
   TextField,
@@ -21,13 +18,7 @@ import styles from "./Contact.module.css";
 import { useForm } from "react-hook-form";
 import _ from "lodash";
 import queryString from "query-string";
-import {
-  BorderAll,
-  BorderBottom,
-  BorderClear,
-  LocalPhone,
-  LocationOn,
-} from "@mui/icons-material";
+import { LocalPhone, LocationOn } from "@mui/icons-material";
 import { useTheme } from "@emotion/react";
 import ContactLeft from "../assets/ContactLeft.png";
 import ContactRight from "../assets/ContactRight.png";
@@ -75,16 +66,16 @@ const Contact = () => {
       <Box p={{ xs: 1, sm: 2 }}>
         <ContactForm />
         <Box height={100}></Box>
-        <Typography variant="h4">You can find us on below Locations</Typography>
+        <div className={styles.c_form}>
+          <h1>Find Us</h1>
+          <p></p>
+        </div>
         <Container>
-          <Grid container p={2} spacing={8}>
+          <div className={styles.cl_maps}>
             {locations.map((item, i) => (
-              <Grid key={i} item xs={12} sm={4}>
-                {" "}
-                <MapCard data={item} />{" "}
-              </Grid>
+              <MapCard data={item} />
             ))}
-          </Grid>
+          </div>
         </Container>
       </Box>
     </div>
@@ -243,59 +234,61 @@ export const MapCard = ({ data }) => {
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.down("md"));
   return (
-    <Card
-      elevation={2}
-      sx={{
+    <div
+      style={{
+        boxShadow: "none",
+        background: "transparent",
         borderRadius: 4,
-        height: "550px",
         display: "flex",
         flexDirection: "column",
-        "&:hover": {
-          height: "600px",
-          marginTop: "-25px",
-          transition: "ease-in-out 0.5s",
-        },
+        // "&:hover": {
+        //   height: "600px",
+        //   marginTop: "-25px",
+        //   transition: "ease-in-out 0.5s",
+        // },
       }}
     >
-      <Box textAlign={"center"} p={1.5}>
-        <Typography variant="h5" fontWeight={500}>
+      <div className={styles.c_loc}>
+        <h2 variant="h5" fontWeight={500}>
           {data.name}
-        </Typography>
-      </Box>
+        </h2>
 
-      <iframe
-        style={{ border: "none", flex: 1 }}
-        src={data.view}
-        title={data.name}
-        width={"100%"}
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-      <Box p={1} display={"flex"} flexDirection={"column"}>
-        <Box display={"flex"} gap={2} m={1} alignItems={"center"}>
-          <LocationOn color="primary" />
-          <Typography variant="body2" color={"GrayText"}>
-            {data.address}
-          </Typography>
+        <div className={styles.cl_map}>
+          <iframe
+            src={data.view}
+            title={data.name}
+            width={"100%"}
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <Box p={1} display={"flex"} flexDirection={"column"}>
+          <Box display={"flex"} gap={2} m={1} alignItems={"center"}>
+            <LocationOn color="primary" />
+            <Typography variant="body2" color={"GrayText"}>
+              {data.address}
+            </Typography>
+          </Box>
+          <Box display={"flex"} gap={2} m={1} alignItems={"center"}>
+            <LocalPhone color="primary" />
+            <Typography
+              variant="body2"
+              color={"GrayText"}
+              onClick={() => {
+                if (matches) {
+                  window.location.href = `tel:${data.mobile}`;
+                } else {
+                }
+              }}
+            >
+              {data.mobile}
+            </Typography>
+          </Box>
         </Box>
-        <Box display={"flex"} gap={2} m={1} alignItems={"center"}>
-          <LocalPhone color="primary" />
-          <Typography
-            variant="body2"
-            color={"GrayText"}
-            onClick={() => {
-              if (matches) {
-                window.location.href = `tel:${data.mobile}`;
-              } else {
-              }
-            }}
-          >
-            {data.mobile}
-          </Typography>
-        </Box>
-      </Box>
-    </Card>
+      </div>
+    </div>
   );
 };
 

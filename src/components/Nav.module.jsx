@@ -26,6 +26,9 @@ const Nav = () => {
             <Link to={"/"} style={path === "/" ? style : {}}>
               {t("Home")}
             </Link>
+            <Link to={"/service"} style={path === "/service" ? style : {}}>
+              Services
+            </Link>
             <Link to={"/gallery"} style={path === "/gallery" ? style : {}}>
               Gallery
             </Link>
