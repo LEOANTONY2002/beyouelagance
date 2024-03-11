@@ -70,13 +70,11 @@ const Contact = () => {
           <h1>Find Us</h1>
           <p></p>
         </div>
-        <Container>
-          <div className={styles.cl_maps}>
-            {locations.map((item, i) => (
-              <MapCard data={item} />
-            ))}
-          </div>
-        </Container>
+        <div className={styles.cl_maps}>
+          {locations.map((item, i) => (
+            <MapCard data={item} />
+          ))}
+        </div>
       </Box>
     </div>
   );
@@ -254,6 +252,7 @@ export const MapCard = ({ data }) => {
         </h2>
 
         <div className={styles.cl_map}>
+          <div></div>
           <iframe
             src={data.view}
             title={data.name}
