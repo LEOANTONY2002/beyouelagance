@@ -143,6 +143,7 @@
   gap: 30px;
   color: #ffc3ee;
   margin-bottom: 40px;
+  width: 100%;
 }
 .g_nav span {
   cursor: pointer;

@@ -15,7 +15,7 @@ const Nav = () => {
   const width = useWindowWidth();
   const [open, setOpen] = useState(false);
 
-  const {t}=useTranslation();
+  const { t } = useTranslation();
 
   return (
     <>
@@ -23,9 +23,8 @@ const Nav = () => {
         <div className={styles.Nav}>
           <img src={Logo} alt="" />
           <div>
-            <LangSwitch/>
             <Link to={"/"} style={path === "/" ? style : {}}>
-              {t('Home')}
+              {t("Home")}
             </Link>
             <Link to={"/gallery"} style={path === "/gallery" ? style : {}}>
               Gallery
@@ -36,6 +35,7 @@ const Nav = () => {
             <Link to={"/contact"} style={path === "/contact" ? style : {}}>
               Contact
             </Link>
+            <LangSwitch />
           </div>
         </div>
       ) : (

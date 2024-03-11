@@ -23,7 +23,7 @@
 }
 
 body {
-  background-color: #fff8fd;
+  background-color: #fff8fd !important;
   width: 100vw;
   font-family: "Poppins";
 }
@@ -50,6 +50,7 @@ body::-webkit-scrollbar:horizontal {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: transparent;
 }
 
 section {
