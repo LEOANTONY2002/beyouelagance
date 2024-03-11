@@ -4,3 +4,23 @@
     margin-top: 100px;
   }
 
+.bg{
+   background: -webkit-linear-gradient(126deg, #ffe0ef,#f98db7);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(126deg, #ffe0ef,#f98db7);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
+}
+
+.h_types h1 {
+  font-weight: bolder;
+  font-size: 40px;
+  font-family: "Poppins-bold";
+}
+
+.h_types h1 span {
+  color: #fd00a7;
+}
+
+.hb_left  {
+ 
+  font-size: 32px;
+  color: rgba(99, 99, 99, 0.629);
+  font-family: "Ruthie";
+}
