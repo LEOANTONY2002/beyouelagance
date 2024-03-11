@@ -18,10 +18,12 @@ import SpaM from "../assets/SpaM.png";
 import Experience from "../assets/Experience.png";
 import { services } from "../content";
 import { useWindowWidth } from "@react-hook/window-size";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [serviceIndex, setServiceIndex] = React.useState(0);
   const width = useWindowWidth();
+  const navigate = useNavigate();
 
   return (
     <div className={styles.Home}>
@@ -39,7 +41,7 @@ const Home = () => {
               <h3>ELAGANT</h3>
             </span>
             <h1>Fall in Love with Your Reflection</h1>
-            <button>Book Now</button>
+            <button onClick={() => navigate('/contact')}>Contact Us</button>
           </div>
         </div>
         <div className={styles.hb_right}>
