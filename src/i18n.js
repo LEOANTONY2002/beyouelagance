@@ -20,7 +20,7 @@ i18n
   .use(initReactI18next) 
   .init({
     resources,
-    lng: "en",
+    lng: process.env.REACT_APP_DEV === 'true' ? "en": 'fr',
     interpolation: {
       escapeValue: false 
     }

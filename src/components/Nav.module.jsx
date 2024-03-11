@@ -35,7 +35,7 @@ const Nav = () => {
             <Link to={"/contact"} style={path === "/contact" ? style : {}}>
               Contact
             </Link>
-            <LangSwitch />
+            {process.env.REACT_APP_DEV === 'true' && <LangSwitch />}
           </div>
         </div>
       ) : (
