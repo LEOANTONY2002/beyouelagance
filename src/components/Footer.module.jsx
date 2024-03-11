@@ -14,7 +14,7 @@ import { useTranslation } from "react-i18next";
 
 const Footer = () => {
   const width = useWindowWidth();
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className={styles.Footer}>

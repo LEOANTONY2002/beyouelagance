@@ -35,19 +35,19 @@ const Nav = () => {
             <Link to={"/contact"} style={path === "/contact" ? style : {}}>
               Contact
             </Link>
-            <LangSwitch />
+            {process.env.REACT_APP_DEV === 'true' && <LangSwitch />}
           </div>
         </div>
       ) : (
         <>
           <div className={styles.Nav}>
             <img src={Logo} alt="" />
-            <img onClick={() => setOpen(true)} src={Menu} />
+            <img onClick={() => setOpen(true)} alt={"Menu"} src={Menu} />
           </div>
           {open && (
             <div className={styles.mNav}>
               <div id={styles.n_tab0} className={styles.n_tab}>
-                <img onClick={() => setOpen(false)} src={Close} />
+                <img alt={'close'} onClick={() => setOpen(false)} src={Close} />
               </div>
               <div>
                 <div id={styles.n_tab1} className={styles.n_tab}>

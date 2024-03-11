@@ -8,6 +8,7 @@ import About from './screens/About.module';
 import * as React from 'react';
 import { theme } from './Theme';
 import { CssBaseline, ThemeProvider } from '@mui/material';
+import Contact from './screens/Contact.module';
 
 
 
@@ -21,7 +22,9 @@ function App() {
       <Routes>
         <Route path='/about' element={<About />} />
         <Route path='/gallery' element={<Gallery />} />
+        <Route path='/contact' element={<Contact />} />
         <Route path='/' element={<Home />} />
+
         <Route path='*' element={<div>Not Found</div>} />
       </Routes>
       <Footer />
