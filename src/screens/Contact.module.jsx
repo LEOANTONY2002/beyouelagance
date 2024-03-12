@@ -66,11 +66,11 @@ const Contact = () => {
       <Box p={{ xs: 1, sm: 2 }}>
         <ContactForm />
         <Box height={100}></Box>
-        <div className={styles.c_form}>
+        <div id={'map'} className={styles.c_form}>
           <h1>Find Us</h1>
           <p></p>
         </div>
-        <div className={styles.cl_maps}>
+        <div  className={styles.cl_maps}>
           {locations.map((item, i) => (
             <MapCard data={item} />
           ))}

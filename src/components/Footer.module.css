@@ -49,6 +49,10 @@
   padding: 20px;
 }
 
+.sc:hover {
+    cursor: pointer;
+}
+
 .f_links {
   width: 100%;
   height: 100%;
@@ -87,11 +91,11 @@
   text-decoration: none;
 }
 .f_link span {
-  color: rgba(0, 0, 0, 0.458);
+  /* color: rgba(0, 0, 0, 0.458); */
   font-weight: bold;
 }
 .f_link h6 {
-  color: rgba(53, 53, 53, 0.401);
+  /* color: rgba(53, 53, 53, 0.401); */
   font-size: small;
   font-weight: bold;
 }

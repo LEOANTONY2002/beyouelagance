@@ -77,3 +77,38 @@
     line-height: 68px;
   }
 }
+
+.c_form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  margin: auto;
+}
+.c_form > h1 {
+  font-family: "Poppins-bold";
+  font-size: 48px;
+  color: #fd00a7;
+}
+.c_form > p {
+  width: 100px;
+  height: 2px;
+  background-color: #fd00a7;
+  margin: 20px 0;
+  margin-bottom: 50px;
+}
+.c_form > div {
+  width: 100%;
+  max-width: 600px;
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+  margin: 50px auto;
+}
+
+.service  {
+  /* font-size: 12px; */
+  color: rgba(99, 99, 99, 0.629);
+  font-family: "Ruthie";
+}

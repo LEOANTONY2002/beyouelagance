@@ -76,6 +76,15 @@ const Nav = () => {
                 </div>
                 <div id={styles.n_tab3} className={styles.n_tab}>
                   <Link
+                    to={"/service"}
+                    onClick={() => setOpen(false)}
+                    style={path === "/service" ? style : {}}
+                  >
+                    Service
+                  </Link>
+                </div>
+                <div id={styles.n_tab4} className={styles.n_tab}>
+                  <Link
                     to={"/about"}
                     onClick={() => setOpen(false)}
                     style={path === "/about" ? style : {}}
@@ -84,7 +93,7 @@ const Nav = () => {
                   </Link>
                 </div>
                 <div
-                  id={styles.n_tab4}
+                  id={styles.n_tab5}
                   onClick={() => setOpen(false)}
                   className={styles.n_tab}
                 >
