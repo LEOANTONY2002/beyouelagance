@@ -84,7 +84,7 @@
 }
 #n_tab2 {
   border-bottom-left-radius: 1000px;
-  height: 55% !important;
+  height: 50% !important;
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 27%;
@@ -92,13 +92,22 @@
 }
 #n_tab3 {
   border-bottom-left-radius: 1000px;
-  height: 75% !important;
+  height: 65% !important;
   align-items: center;
   justify-content: flex-end;
   padding-bottom: 30%;
   z-index: 4;
 }
 #n_tab4 {
+  border-bottom-left-radius: 1000px;
+  height: 80% !important;
+  align-items: center;
+  justify-content: flex-end;
+  padding-bottom: 30%;
+  z-index: 3;
+}
+
+#n_tab5 {
   border-bottom-left-radius: 1000px;
   height: 95% !important;
   align-items: center;
