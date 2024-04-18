@@ -16,14 +16,43 @@ import HairM from "../assets/HairM.png";
 import NailM from "../assets/NailM.png";
 import SpaM from "../assets/SpaM.png";
 import Experience from "../assets/Experience.png";
-import { services } from "../content";
 import { useWindowWidth } from "@react-hook/window-size";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [serviceIndex, setServiceIndex] = React.useState(0);
   const width = useWindowWidth();
   const navigate = useNavigate();
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      title: t("BRIDAL_CARE"),
+      photo: BrideM,
+      content: t("BRIDAL_CARE_DESC"),
+    },
+    {
+      title: t("FACE_CARE"),
+      photo: FaceM,
+      content: t("FACE_CARE_DESC"),
+    },
+    {
+      title: t("HAIR_CARE"),
+      photo: HairM,
+      content: t("HAIR_CARE_DESC"),
+    },
+    {
+      title: t("NAIL_CARE"),
+      photo: NailM,
+      content: t("NAIL_CARE_DESC"),
+    },
+    {
+      title: t("SPA_CARE"),
+      photo: SpaM,
+      content: t("SPA_CARE_DESC"),
+    },
+  ];
 
   return (
     <div className={styles.Home}>
@@ -37,11 +66,13 @@ const Home = () => {
           <img className={styles.hb_img} src={BannerImg} alt="" />
           <div>
             <span>
-              <span>we make you feel</span>
-              <h3>ELAGANT</h3>
+              <span>{t("WE")}</span>
+              <h3>{t("ELEGANT").toUpperCase()}</h3>
             </span>
-            <h1>Fall in Love with Your Reflection</h1>
-            <button onClick={() => navigate('/contact')}>Contact Us</button>
+            <h1>{t("FALL")}</h1>
+            <button onClick={() => navigate("/contact")}>
+              {t("CONTACT_US")}
+            </button>
           </div>
         </div>
         <div className={styles.hb_right}>
@@ -52,7 +83,7 @@ const Home = () => {
         <img src={Types} alt="" />
         <div>
           <h1>
-            Your <span>All-in-One</span> Sanctuary for Beauty and Serenity.
+            {t("YOUR")} <span>{t("ONE_PLACE")}</span>
           </h1>
           <div className={styles.ht_cards}>
             <div
@@ -60,7 +91,7 @@ const Home = () => {
               className={styles.ht_card}
             >
               <div></div>
-              <span>Bridal</span>
+              <span>{t("BRIDAL")}</span>
               <img src={Bride} alt="" />
             </div>
             <div
@@ -68,7 +99,7 @@ const Home = () => {
               className={styles.ht_card}
             >
               <div></div>
-              <span>Face</span>
+              <span>{t("FACE")}</span>
               <img src={Face} alt="" />
             </div>
             <div
@@ -76,7 +107,7 @@ const Home = () => {
               className={styles.ht_card}
             >
               <div></div>
-              <span>Hair</span>
+              <span>{t("HAIR")}</span>
               <img src={Hair} alt="" />
             </div>
             <div
@@ -84,7 +115,7 @@ const Home = () => {
               className={styles.ht_card}
             >
               <div></div>
-              <span>Nail</span>
+              <span>{t("NAIL")}</span>
               <img src={Nail} alt="" />
             </div>
             <div
@@ -92,7 +123,7 @@ const Home = () => {
               className={styles.ht_card}
             >
               <div></div>
-              <span>Spa</span>
+              <span>{t("SPA")}</span>
               <img src={Spa} alt="" />
             </div>
           </div>
@@ -100,8 +131,8 @@ const Home = () => {
       </section>
       <section className={styles.h_service}>
         <div className={styles.hs_title}>
-          <span>Beauty in Full Bloom</span>
-          <h1>OUR SERVICES</h1>
+          <span>{t("BEAUTY_BLOOM")}</span>
+          <h1>{t("OUR_SERVICES")}</h1>
         </div>
         <div className={styles.hs_main}>
           <div className={styles.hs_nav}>
@@ -135,7 +166,7 @@ const Home = () => {
             <div className={styles.hsc_desc}>
               <h1>{services[serviceIndex].title}</h1>
               <p>{services[serviceIndex].content}</p>
-              <button>Book Now</button>
+              <button>{t("BOOK_NOW")}</button>
             </div>
           </div>
         </div>
@@ -143,16 +174,11 @@ const Home = () => {
       <section className={styles.h_exp}>
         <div className={styles.he_content}>
           <h1>
-            <span>20+ </span>years of experience
+            <span>{t("20+")}</span>
+            {t("EXP")}
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in{" "}
-          </p>
-          <button>About Us</button>
+          <p>{t("EXP_DESC")}</p>
+          <button>{t("ABOUT_US")}</button>
         </div>
         <img src={Experience} alt="" />
       </section>

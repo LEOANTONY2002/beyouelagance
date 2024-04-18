@@ -3,10 +3,12 @@ import styles from "./Gallery.module.css";
 import GalleryBanner from "../assets/Gallery.png";
 import { useWindowWidth } from "@react-hook/window-size";
 import { gallery } from "../content";
+import { useTranslation } from "react-i18next";
 
 const Gallery = () => {
   const width = useWindowWidth();
   const [galleryIndex, setGalleryIndex] = useState(0);
+  const { t } = useTranslation();
 
   return (
     <>
@@ -15,14 +17,14 @@ const Gallery = () => {
           <div className={styles.g_banner}>
             <div className={styles.gb_title}>
               <div>
-                <span>Beauty</span>
-                <p>Album.</p>
+                <span>{t("BEAUTY")}</span>
+                <p>{t("ALBUM")}</p>
               </div>
             </div>
             <div className={styles.gb_img}>
               <img src={GalleryBanner} alt="" />
               <p></p>
-              <span>Elegance in Excellence</span>
+              <span>{t("EXC")}</span>
             </div>
             <div className={styles.gb_grad}></div>
           </div>
@@ -30,14 +32,14 @@ const Gallery = () => {
           <div className={styles.mg_banner}>
             <div className={styles.mgb_grad}></div>
             <div className={styles.mgb_img}>
-              <span>Elegance in Excellence</span>
+              <span>{t("EXC")}</span>
               <p></p>
               <img src={GalleryBanner} alt="" />
             </div>
             <div className={styles.mgb_title}>
               <div>
-                <span>Beauty</span>
-                <p>Album.</p>
+                <span>{t("BEAUTY")}</span>
+                <p>{t("ALBUM")}</p>
               </div>
             </div>
           </div>
